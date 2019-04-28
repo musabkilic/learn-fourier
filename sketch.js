@@ -156,10 +156,12 @@ function draw() {
 }
 
 function mousePressed(){
-    if(mouseX < width){
-        if(mouseY < height){
-            trail = [];
-            shape.push(math.complex((mouseX-width/2)/SIZE, -(mouseY-height/2)/SIZE));
+    if(event.type != 'touchstart'){
+        if(mouseX < width){
+            if(mouseY < height){
+                trail = [];
+                shape.push(math.complex((mouseX-width/2)/SIZE, -(mouseY-height/2)/SIZE));
+            }
         }
     }
 }
