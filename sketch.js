@@ -89,6 +89,7 @@ function setup() {
     createCanvas(600, 600);
     background(0);
 
+    createDiv("<br/>");
     buttonClear = createButton("Clear");
     buttonClear.mousePressed(
         function(){
